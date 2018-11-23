@@ -1,6 +1,6 @@
 # travel
 
-> A vue,js Project
+> A vue.js Project
 
 ## Build Setup
 
