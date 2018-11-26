@@ -5,7 +5,7 @@
              :src="bannerImg"
              @click="handelBannerGallery">
         <div class="banner-info">
-            <div class="banner-title">
+            <div class="banner-tittle">
                 {{this.sightName}}
             </div>
             <div class="banner-number">
