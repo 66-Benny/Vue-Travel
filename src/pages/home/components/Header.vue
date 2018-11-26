@@ -7,7 +7,7 @@
       <span class="iconfont">&#xe632;</span>
       输入城市/景点/游玩主题</div>
     <div class="header-right">
-      <router-link to="/city">列表
+      <router-link to="/city">{{this.city}}
           <span class="iconfont arrow-icon">&#xe64a;</span>
       </router-link>
     </div>
@@ -15,16 +15,15 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
-  data () {
-    return {
-    }
+  computed: {
+    ...mapState(['city'])
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
   .header
